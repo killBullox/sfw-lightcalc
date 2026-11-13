@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfw-lightcalc"
+version = "0.1.0"
+description = "Calcolo illuminotecnico dei locali: illuminamento, uniformità, UGR e mappe isolux da file IES"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Synapsis FW S.r.l." }]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+sfw-lightcalc = "sfw_lightcalc.cli:main"
+
+[tool.setuptools]
+packages = ["sfw_lightcalc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

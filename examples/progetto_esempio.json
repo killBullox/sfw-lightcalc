@@ -1,0 +1,36 @@
+{
+ "rooms": [
+  {
+   "id": "ufficio",
+   "polygon": [[0, 0], [6, 0], [6, 4.5], [0, 4.5]],
+   "height": 2.7,
+   "workplane": 0.8,
+   "reflectances": {"ceiling": 0.7, "walls": 0.5, "floor": 0.2},
+   "em_target": 500,
+   "u0_target": 0.6,
+   "ugr_max": 19,
+   "luminaire": {"ies": "downlight_3000lm.ies"}
+  },
+  {
+   "id": "sala_riunioni_L",
+   "polygon": [[0, 0], [8, 0], [8, 3], [4, 3], [4, 6], [0, 6]],
+   "height": 3.0,
+   "workplane": 0.75,
+   "reflectances": {"ceiling": 0.8, "walls": 0.5, "floor": 0.3},
+   "em_target": 500,
+   "u0_target": 0.6,
+   "ugr_max": 19,
+   "luminaire": {"ies": "lineare_4000lm.ies"}
+  },
+  {
+   "id": "corridoio",
+   "polygon": [[0, 0], [12, 0], [12, 1.8], [0, 1.8]],
+   "height": 2.7,
+   "workplane": 0.0,
+   "em_target": 100,
+   "u0_target": 0.4,
+   "ugr_max": 28,
+   "luminaire": {"flux_lm": 1500}
+  }
+ ]
+}
